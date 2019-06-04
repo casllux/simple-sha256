@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<title> SHA256 Hashing </title>
+	
+	<style >
+		body{
+			background-color: linen;
+		}
+		#outer {
+			margin: auto;
+			width: 50%;
+			padding: 10px;
+
+		}
+		h2 {
+			text-align: center;
+			padding: 20px;
+		}
+		#inner-input {
+			margin:0 auto;
+			border: solid;
+			border-width: 3px;
+			border-color: black;
+			text-align: center;
+			padding: 5px;
+			background-color: ghostwhite;
+			
+		}
+		button{
+			padding: 9px;
+			margin: 5px auto;
+			background-color: maroon;
+		}
+		#final-bottom {
+			margin: 50px auto;
+			border: solid 3px;
+			text-align: center;
+			padding: 5px;
+			background-color: ghostwhite;
+		}
+		h3 {
+			text-decoration: underline;
+		}
+
+	</style>
+	</head>
+	<body>
+		<div id="outer">
+			<h2>Enter a value to get its SHA256 Hash</h2>
+			<div id="inner-input">
+				<form id="passdata" action='.' method='post'>
+					<div>				
+						<label>Enter data here: </label>
+						<input type = "text" name="data" />
+					</div>
+				</form>	
+				<button type = "submit" form="passdata" value="Get Hash">Get Hash </button>	
+			</div>
+			<div id ="final-bottom">	
+				<h3>SHA256 Hash</h3>
+				<p>Data: <strong>{{value}}</strong></p>			
+				<p>Hash: <strong>{{hash}}</strong></p>
+			</div>
+		</div>
+	</body>
+</html>
