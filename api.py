@@ -1,6 +1,6 @@
 from flask import Flask, render_template, request
 
-from code import hash_value
+from sha import hash_value
 
 app = Flask(__name__)
 
